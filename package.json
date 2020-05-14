@@ -1,0 +1,33 @@
+{
+  "name": "code.bth.se",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "webpack -p",
+    "build-server": "",
+    "start": "npm run serve && nodemon app.js",
+    "serve": "webpack -d --watch &"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hat": "0.0.3",
+    "monaco-editor": "^0.20.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "css-minify": "^1.0.1",
+    "file-loader": "^6.0.0",
+    "monaco-editor-webpack-plugin": "^1.9.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

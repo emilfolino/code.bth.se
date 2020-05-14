@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment {
+    height: 20vh;
+    border-bottom: 4px solid darkblue;
+}
+
+.assignment-description {
+    padding: 1em;
+}
+
+.editor-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.editor {
+    height: 100%;
+    width: 60%;
+}
+
+.output-container {
+    height: 100%;
+    width: 38%;
+}
+
+.hud {
+
+}
+
+.output {
+    background-color: black;
+    color: green;
+    padding: 1rem;
+}
