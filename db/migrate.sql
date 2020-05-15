@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS students (
+    email VARCHAR(255) NOT NULL,
+    hash VARCHAR(32) NOT NULL
+);

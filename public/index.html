@@ -9,23 +9,12 @@
 </head>
 <body>
     <div id="root" class="root">
-        <div id="assignment" class="assignment">
-            <div id="assignment-description" class="assignment-description">Loading assignment description</div>
-        </div>
-
-        <div id="editor-container" class="editor-container">
-            <div id="editor" class="editor"></div>
-
-            <div id="output-container" class="output-container">
-                <div id="hud" class="hud">
-                    <button class="button" id="run">Run</button>
-                </div>
-
-                <pre id="output" class="output"></pre>
-            </div>
-        </div>
+        <h1>code.bth.se</h1>
+        <form method="post" action="/auth">
+            <label>E-mail</label>
+            <input type="email" name="email" id="email">
+            <input type="submit" value="Start coding" id="start">
+        </form>
     </div>
-
-    <script type="text/javascript" src="dist/bundle.min.js"></script>
 </body>
 </html>

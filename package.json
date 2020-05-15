@@ -16,10 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "hat": "0.0.3",
     "monaco-editor": "^0.20.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {
     "css-loader": "^3.5.3",

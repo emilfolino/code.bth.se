@@ -9,6 +9,7 @@ const fs = require('fs');
 const { exec } = require("child_process");
 
 const save = require('./models/save.js');
+const auth = require('./models/auth.js');
 
 
 const port = 8181;
@@ -35,6 +36,10 @@ let data = {
 app.get("/load/:hash", (req, res) => res.json(data));
 
 app.post("/save", (req, res) => save.runCode(req, res));
+
+app.post("/auth", (req, res) => auth.authenticateUser(req, res));
+
+app.get('/code', (req, res) => res.sendFile(path.join(__dirname + '/public/code.html')));
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/public/index.html')));
 

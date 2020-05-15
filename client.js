@@ -17,7 +17,7 @@ import * as monaco from 'monaco-editor';
 
         editor = monaco.editor.create(document.getElementById('editor'), {
             value: "",
-            language: result.language,
+            language: "python",
             lineNumbers: "on",
             roundedSelection: false,
             scrollBeyondLastLine: false,
